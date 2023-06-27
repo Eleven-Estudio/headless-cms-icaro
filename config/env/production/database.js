@@ -1,3 +1,4 @@
+
 module.exports = ({ env }) => {
   return {
     connection: {
@@ -10,8 +11,7 @@ module.exports = ({ env }) => {
         password: env('DATABASE_PASSWORD', 'strapi'),
         ssl: { rejectUnauthorized: false },
       },
-      pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
-      debug: false,
+      debug: false
     }
   }
 };
