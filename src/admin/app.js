@@ -27,6 +27,9 @@ const config = {
     // 'zh-Hans',
     // 'zh',
   ],
+  theme: {
+    light: true,
+  }
 };
 
 const bootstrap = (app) => {
