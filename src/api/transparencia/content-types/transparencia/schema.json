@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transparencias",
+  "info": {
+    "singularName": "transparencia",
+    "pluralName": "transparencias",
+    "displayName": "Transparencia",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "IMAGEN",
+        "PDF"
+      ],
+      "default": "PDF"
+    },
+    "category": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer",
+      "default": 2000,
+      "min": 2020
+    }
+  }
+}
