@@ -4,7 +4,7 @@
   "info": {
     "singularName": "call",
     "pluralName": "calls",
-    "displayName": "Convocatorias",
+    "displayName": "Artículos",
     "description": ""
   },
   "options": {
@@ -69,6 +69,12 @@
         }
       },
       "type": "string"
+    },
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type-article.type-article",
+      "inversedBy": "articles"
     }
   }
 }
