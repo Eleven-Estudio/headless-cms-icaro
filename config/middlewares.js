@@ -22,6 +22,12 @@ module.exports = ({ env }) => ([
             "blob:",
             env("CF_PUBLIC_ACCESS_URL").replace(/^https?:\/\//, ""),
           ],
+          // Add for youtubue embeds
+          "frame-src": [
+            "'self'",
+            "https://www.youtube.com",
+            "https://www.youtube-nocookie.com",
+          ],
           "media-src": [
             "'self'",
             "data:",
