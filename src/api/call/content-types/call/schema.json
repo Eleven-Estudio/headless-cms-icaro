@@ -75,6 +75,16 @@
       "relation": "manyToOne",
       "target": "api::type-article.type-article",
       "inversedBy": "articles"
+    },
+    "pay": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "integrations.pagos"
     }
   }
 }

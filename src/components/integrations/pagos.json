@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_integrations_pagos",
+  "info": {
+    "displayName": "Pagos",
+    "icon": "database",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "string",
+      "required": true
+    },
+    "pricing": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
