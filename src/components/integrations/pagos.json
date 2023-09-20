@@ -11,11 +11,15 @@
       "type": "string",
       "required": true
     },
-    "pricing": {
-      "type": "decimal"
-    },
     "description": {
       "type": "text"
+    },
+    "price": {
+      "type": "string",
+      "regex": "^[1-9]\\d*(\\.\\d{2,})$",
+      "required": true,
+      "default": "0.00",
+      "unique": false
     }
   }
 }
